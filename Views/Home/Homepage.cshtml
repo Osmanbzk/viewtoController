@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Homepage Page</title>
+</head>
+<body>
+    <div>
+
+        @using (Html.BeginForm())
+        {
+            @Html.TextBox("text1")<br />
+            @Html.CheckBox("check1") @("Onaylıyorum")
+            <hr />
+            <input type="submit" value="Gönder" />
+        }
+    </div>
+</body>
+</html>
